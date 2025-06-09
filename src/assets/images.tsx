@@ -8,9 +8,14 @@ import grid2 from "@/assets/images/GridImag2.png";
 import grid3 from "@/assets/images/GridImag3.png";
 import grid4 from "@/assets/images/GridImage4.png";
 import grid5 from "@/assets/images/GridImage5.png";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-const ResponsiveImage = ({ src, alt }: { src: any; alt: string }) => (
+interface ResponsiveImageProps {
+  src: StaticImageData;
+  alt: string;
+}
+
+const ResponsiveImage = ({ src, alt }: ResponsiveImageProps) => (
   <div className="relative w-full h-full">
     <Image
       alt={alt}
@@ -55,20 +60,20 @@ export const CardPic3 = () => (
   <div className="relative w-full h-full rounded-2xl">
     <Image
       src={card3}
-      alt="card2"
+      alt="card3"
       className="w-full h-full object-cover lg:object-fill object-right lg:object-center"
     />
   </div>
 );
 
 export const LogoPic = () => (
-  <ResponsiveImage src={logopic} alt="Card illustration 3" />
+  <ResponsiveImage src={logopic} alt="Company logos" />
 );
 
 export const GridPic1 = () => (
-  <div className="p-2 relative w-full h-full ">
+  <div className="p-2 relative w-full h-full">
     <Image
-      alt="grid1"
+      alt="grid image 1"
       src={grid1}
       style={{
         objectFit: "fill",
@@ -80,10 +85,11 @@ export const GridPic1 = () => (
     />
   </div>
 );
+
 export const GridPic2 = () => (
-  <div className="p-2 relative w-full h-full ">
+  <div className="p-2 relative w-full h-full">
     <Image
-      alt="grid1"
+      alt="grid image 2"
       src={grid2}
       style={{
         objectFit: "fill",
@@ -95,10 +101,11 @@ export const GridPic2 = () => (
     />
   </div>
 );
+
 export const GridPic3 = () => (
-  <div className="p-2 relative w-full h-full ">
+  <div className="p-2 relative w-full h-full">
     <Image
-      alt="grid1"
+      alt="grid image 3"
       src={grid3}
       style={{
         objectFit: "fill",
@@ -110,10 +117,11 @@ export const GridPic3 = () => (
     />
   </div>
 );
+
 export const GridPic4 = () => (
-  <div className="p-2 relative w-full h-full ">
+  <div className="p-2 relative w-full h-full">
     <Image
-      alt="grid1"
+      alt="grid image 4"
       src={grid4}
       style={{
         objectFit: "fill",
@@ -127,9 +135,9 @@ export const GridPic4 = () => (
 );
 
 export const GridPic5 = () => (
-  <div className="p-2 relative w-full h-full ">
+  <div className="p-2 relative w-full h-full">
     <Image
-      alt="grid1"
+      alt="grid image 5"
       src={grid5}
       style={{
         objectFit: "fill",

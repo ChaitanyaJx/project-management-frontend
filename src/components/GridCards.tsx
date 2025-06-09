@@ -70,7 +70,7 @@ export default function GridCards() {
               Enhance Team Performance
             </p>
             <p className="font-manrope font-extralight">
-              Boost your team's performance with clear goals, streamlined
+              Boost your team&apos;s performance with clear goals, streamlined
               processes, and insightful analytics
             </p>
           </div>
@@ -84,7 +84,7 @@ export default function GridCards() {
               Enhance Team Performance
             </p>
             <p className="font-manrope font-extralight">
-              Boost your team's performance with clear goals, streamlined
+              Boost your team&apos;s performance with clear goals, streamlined
               processes, and insightful analytics
             </p>
           </div>
