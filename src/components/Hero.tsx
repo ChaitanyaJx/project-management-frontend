@@ -1,4 +1,3 @@
-import { ImagePic } from "@/assets/images";
 import Image from "next/image";
 import heroImage from "@/assets/images/DesktopApp.png";
 export default function Hero() {
