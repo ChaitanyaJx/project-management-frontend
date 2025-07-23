@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TaskManager: Landing Page",
+  title: "TaskManager: Landing Page Site",
   description: "Landing Page for a project management site",
 };
 
